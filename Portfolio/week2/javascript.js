@@ -5,3 +5,6 @@ console.log(currentDate);
   console.log(currentYear);
   
   document.getElementById("currentYear").innerHTML =  currentYear;
+
+  //---------------------------------------------------------//
+
