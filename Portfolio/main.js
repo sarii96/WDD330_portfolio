@@ -13,7 +13,12 @@ const links = [
   {
     label: "Week02",
     url: "week2/week2.html"
+  },
+  {
+    label: "Week03",
+    url: "week3/week3.html"
   }
+
   
 ];
 let htmlLinks = "";

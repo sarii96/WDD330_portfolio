@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="portfolio" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio WDD 330</title>
+    <link rel="stylesheet" type = "text/css" href="week3.css">
+</head>
+<body>
+    <header>
+    <h1>WDD 330 Portfolio</h1>
+     </header>
+     <h2>Exercises</h2>
+     <body>
+        <p>This exercise: It will open a window with the name Sarah</p> 
+        <p>Event: onclick</p>
+        <button onclick="myFunction()">Click me</button>
+        <p id="demo"></p>
+     </body>
+     <script>
+         function myFunction() {
+  document.getElementById("demo").innerHTML = "Hello World";
+}
+         
+         let user = {
+  name: "Sarah",
+  age: 30,
+
+  sayHi() {
+    
+    alert(this.name);
+  }
+
+};
+
+user.sayHi(); 
+
+     </script>
+
+     <footer>
+        <p> 
+            &copy;
+                <span id="currentYear"></span> &star;&star;
+                Sarah Romero | Idaho |
+            <a href="http://www.byui.edu" target="_blank">BYU-Idaho</a>
+        </p>
+    </footer>
+    <script src="javascript.js"></script>
+    </body>
+    </html>
