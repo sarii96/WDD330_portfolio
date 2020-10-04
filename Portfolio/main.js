@@ -18,7 +18,6 @@ const links = [
     label: "Week03",
     url: "week3/week3.html"
   }
-
   
 ];
 let htmlLinks = "";
