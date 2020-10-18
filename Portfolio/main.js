@@ -21,8 +21,11 @@ const links = [
   {
     label: "Week04",
     url: "week4/week4.html"
+  },
+  {
+    label: "Week05",
+    url: "week5/week5.html"
   }
-  
 ];
 let htmlLinks = "";
 for (let linkObject of Object.values(links)) {
