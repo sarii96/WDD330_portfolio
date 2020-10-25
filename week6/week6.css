@@ -1,0 +1,22 @@
+header,
+footer {
+    background-color: #00539cff;
+    color: white;
+    text-align: center;
+    padding: .5em;
+    margin: 1.25em auto;
+
+}
+
+body {
+    background-color: #eea47fff;
+
+}
+
+footer a {
+    color: lightblue;
+}
+
+li a {
+    color: black;
+}

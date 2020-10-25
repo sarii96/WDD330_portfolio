@@ -1,19 +1,17 @@
-body {
-    margin: 1em;
-    min-width: 250px;
+.container {
+    background-color: pink;
+    width: 50%;
+    padding: 20px;
 }
 
-ul {
-    margin: .5em;
-    padding: .5em;
+#addButton {
+    background-color: beige;
 }
 
-ul li {
-    cursor: pointer;
-    position: relative;
-    padding: 12px 8px 12px 40px;
+#todoList {
     list-style-type: none;
-    background: #eee;
-    font-size: 18px;
-    transition: 0.2s;
+}
+
+li {
+    padding-bottom: 1em;
 }

@@ -6,25 +6,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ToDo List</title>
     <link rel="stylesheet" type="text/css" href="todo.css">
-    <script src="main-w6.js" type="module"></script>
 </head>
 
 <body>
-    <h1>My To Do List</h1>
-    <header>
+    <div class="container">
+        <h1>My first To Do List</h1>
         <input type="text" id="todoInput" />
         <button id="addButton">Add</button>
-    </header>
-    <main>
         <ul id="todoList">
-            <li data-id="date">Go to class</li>
-            <li>Go to run.</li>
-            <li>Do homework.</li>
-            <li>Go to swin.</li>
-            <li>Read books.</li>
-            <li>Make two posts per week on my social media.</li>
+            <!--<li data-id="date">Go to class</li>-->
+            <button id="deleteButton">X</button>
         </ul>
-    </main>
+    </div>
+    <script src="utilities.js"></script>
+    <script src="main-w6.js"></script>
 </body>
 
 </html>
