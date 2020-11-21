@@ -43,10 +43,10 @@ const links = [
     url: "week9/week9.html"
   },
   {
-    labe: "week10",
-   url: "week10/week10.html"
+    label: "Week10",
+    url: "week10/week10.html"
   }
-   
+
 ];
 let htmlLinks = "";
 for (let linkObject of Object.values(links)) {
