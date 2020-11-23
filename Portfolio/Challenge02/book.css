@@ -1,0 +1,32 @@
+@import url('https://fonts.googleapis.com/css2?family=Epilogue:wght@700&display=swap');
+
+body {
+    background: url("images/IMG_3571.jpg") no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-position: center;
+    height: 100%;
+}
+
+h1 {
+    color: turquoise;
+    font-size: 60px;
+    text-align: center;
+    font-family: 'Epilogue', sans-serif;
+    margin: 1px;
+}
+
+#myform {
+    display: flex;
+    margin: 0 auto;
+    width: 250px;
+}
+
+.container {
+    margin-top: 15%;
+}
+
+.center-block {
+    width: 500px;
+}
