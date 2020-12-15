@@ -7,11 +7,12 @@ body {
     -o-background-size: cover;
     background-position: center;
     height: 100%;
+    margin: 0;
 }
 
 h1 {
     color: turquoise;
-    font-size: 60px;
+    font-size: 70px;
     text-align: center;
     font-family: 'Epilogue', sans-serif;
     margin: 1px;
@@ -29,4 +30,8 @@ h1 {
 
 .center-block {
     width: 500px;
+}
+
+ul {
+    background-color: white;
 }
