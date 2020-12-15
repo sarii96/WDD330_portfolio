@@ -1,31 +1,39 @@
-fetch("https://www.googleapis.com/books/v1/volumes?q=ColleenHoover")
-.then(function(res) {
+
+//Wire up button
+function searchApi(searchString) {
+  fetch("https://www.googleapis.com/books/v1/volumes?q=" + searchString)
+  .then(function(res) {
     return res.json();
   })
  .then(function(results) {
-  var str = ' ';
-  document.getElementById("results").innerHTML = str;
-  str = '<ul>'
+   let resultString = "<ul";
+    results.items.forEach(function(book) {
+      resultString += '<li>'+'<strong>'+'Title:'+'</strong>'+' '+ book.volumeInfo.title + '</li>';
+      resultString += '<ul>';
+      resultString += '<li>'+'<strong>'+'Author:'+'</strong>'+' '+ book.volumeInfo.authors + '</li>';
+      resultString += '<li>'+'<strong>'+'Publish Date:'+'</strong>'+' '+ book.volumeInfo.publishedDate + '</li>';
+      resultString += '<li>'+'<strong>'+'Sinopsis:'+'</strong>'+' '+ book.volumeInfo.description + '</li><br>';
+      resultString += '<img src="'+ book.volumeInfo.imageLinks.thumbnail + '">';
+      resultString += '</ul>';
+    }); 
+    
+    resultString += '</ul>';
+    document.getElementById("results").innerHTML = resultString;
+  }).catch(function(error) {
+    console.log(error);
+    document.getElementById("results").innerHTML = 'Error';
+  });
 
-  results.items.forEach(function(book) {
-    str += '<li>'+'<strong>'+'Title:'+'</strong>'+' '+ book.volumeInfo.title + '</li>';
-    str += '<ul>';
-    str += '<li>'+'<strong>'+'Author:'+'</strong>'+' '+ book.volumeInfo.authors + '</li>';
-    str += '<li>'+'<strong>'+'Publish Date:'+'</strong>'+' '+ book.volumeInfo.publishedDate + '</li>';
-    str += '<li>'+'<strong>'+'Sinopsis:'+'</strong>'+' '+ book.volumeInfo.description + '</li>';
-    str += '<img src='+ book.volumeInfo.imageLinks + '>';
-    str += '</ul>';
-  }); 
   
-  str += '</ul>';
-  document.getElementById("results").innerHTML = str;
+}
 
+function buttonClicked() {
+  let submitText = document.getElementById("search").value;
+  searchApi(submitText);
+}
 
- }),
-function(error) {
-       console.log(error);
-  
-      };
+document.getElementById("button").addEventListener("click", buttonClicked);
+
 
     //  str += '<li>'+ book.volumeInfo.buyLink + '</li>';
 

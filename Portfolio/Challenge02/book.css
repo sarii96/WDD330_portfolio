@@ -34,7 +34,7 @@ h1 {
 
 ul {
     margin: .5em;
-    padding-top: .5em;
+    padding-top: 1.5em;
     padding-bottom: 3em;
     padding-right: 30px;
 
@@ -46,4 +46,8 @@ ul {
     margin-left: 10em;
     margin-top: 3em;
     margin-bottom: 5em;
+}
+
+li {
+    margin: 5px;
 }
