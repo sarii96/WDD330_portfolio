@@ -8,11 +8,11 @@ fetch("https://www.googleapis.com/books/v1/volumes?q=ColleenHoover")
   str = '<ul>'
 
   results.items.forEach(function(book) {
-    str += '<li>'+'Title:'+' '+ book.volumeInfo.title + '</li>';
+    str += '<li>'+'<strong>'+'Title:'+'</strong>'+' '+ book.volumeInfo.title + '</li>';
     str += '<ul>';
-    str += '<li>'+'Author'+ ' '+ book.volumeInfo.authors + '</li>';
-    str += '<li>'+'Publish Date:'+' '+ book.volumeInfo.publishedDate + '</li>';
-    str += '<li>'+'Sinopsis:'+' '+ book.volumeInfo.description + '</li>';
+    str += '<li>'+'<strong>'+'Author:'+'</strong>'+' '+ book.volumeInfo.authors + '</li>';
+    str += '<li>'+'<strong>'+'Publish Date:'+'</strong>'+' '+ book.volumeInfo.publishedDate + '</li>';
+    str += '<li>'+'<strong>'+'Sinopsis:'+'</strong>'+' '+ book.volumeInfo.description + '</li>';
     str += '<img src='+ book.volumeInfo.imageLinks + '>';
     str += '</ul>';
   }); 
