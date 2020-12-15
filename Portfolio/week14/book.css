@@ -58,6 +58,7 @@ input {
     box-sizing: border-box;
 }
 
+
 /*small screen*/
 @media screen and (max-width: 600px) {
     .center-block {
@@ -71,5 +72,11 @@ input {
     #results {
         margin-left: 2em;
         margin-right: 2em;
+    }
+
+    img {
+        float: left;
+        padding-right: 2em;
+        padding-bottom: 2em;
     }
 }

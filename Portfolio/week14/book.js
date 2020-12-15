@@ -10,11 +10,10 @@ function searchApi(searchString) {
     results.items.forEach(function(book) {
       resultString += '<li>'+'<strong>'+'Title:'+'</strong>'+' '+ book.volumeInfo.title + '</li>';
       resultString += '<ul>';
+      resultString += '<img src="'+ book.volumeInfo.imageLinks.thumbnail + '">';
       resultString += '<li>'+'<strong>'+'Author:'+'</strong>'+' '+ book.volumeInfo.authors + '</li>';
       resultString += '<li>'+'<strong>'+'Publish Date:'+'</strong>'+' '+ book.volumeInfo.publishedDate + '</li>';
       resultString += '<li>'+'<strong>'+'Sinopsis:'+'</strong>'+' '+ book.volumeInfo.description + '</li><br>';
-      resultString += '<img src="'+ book.volumeInfo.imageLinks.thumbnail + '">';
-      resultString += '<li>'+'<strong>'+'Price:'+'</strong>'+' '+ book.volumeInfo.listPrice + '</li>';
       resultString += '</ul>';
     }); 
     
