@@ -14,6 +14,7 @@ function searchApi(searchString) {
       resultString += '<li>'+'<strong>'+'Publish Date:'+'</strong>'+' '+ book.volumeInfo.publishedDate + '</li>';
       resultString += '<li>'+'<strong>'+'Sinopsis:'+'</strong>'+' '+ book.volumeInfo.description + '</li><br>';
       resultString += '<img src="'+ book.volumeInfo.imageLinks.thumbnail + '">';
+      resultString += '<li>'+'<strong>'+'Price:'+'</strong>'+' '+ book.volumeInfo.listPrice + '</li>';
       resultString += '</ul>';
     }); 
     
