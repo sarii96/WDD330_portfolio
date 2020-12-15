@@ -48,7 +48,7 @@ const links = [
   },
   {
     label: "Week 14 Challenge02",
-    url: "Challenge02/booksearch.html"
+    url: "week14/booksearch.html"
   }
 
 ];
