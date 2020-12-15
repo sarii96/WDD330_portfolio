@@ -6,7 +6,7 @@ function searchApi(searchString) {
     return res.json();
   })
  .then(function(results) {
-   let resultString = "<ul";
+   let resultString = "<ul>";
     results.items.forEach(function(book) {
       resultString += '<li>'+'<strong>'+'Title:'+'</strong>'+' '+ book.volumeInfo.title + '</li>';
       resultString += '<ul>';
